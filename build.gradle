@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'idea'
+
+group 'springsecurity'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.springframework.security:spring-security-web:5.0.4.RELEASE'
+    compile 'org.springframework.security:spring-security-config:5.0.4.RELEASE'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
